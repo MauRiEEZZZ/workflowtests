@@ -1,11 +1,13 @@
-name: GitHub Prd Demo
+name: GitHub Acc Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-    environment: prd
+    environment: acc
     steps:
       - run: echo "This is on ${{ vars.ENV_FULLNAME }} environment."
-  call-reusable-workflow:
+  call-reusable-workflow-acc:
     uses: ./.github/workflows/reusable.yml
+    with:
+      environment-var: acc
