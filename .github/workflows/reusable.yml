@@ -1,5 +1,5 @@
 name: GitHub Reusable Demo
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+run-name: ${{ github.actor }} is testing out GitHub Reusable workflow 🚀
 on: 
   workflow_call:
     inputs:
@@ -9,5 +9,6 @@ on:
 jobs:
   Explore-GitHub-Reusable-Workflow:
     runs-on: ubuntu-latest
+    environment: ${{ inputs.environment-var }}
     steps:
       - run: echo "This is on ${{ vars.ENV_FULLNAME }} environment."

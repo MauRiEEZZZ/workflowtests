@@ -2,7 +2,7 @@ name: GitHub Dev Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+  Explore-Reusable-Workflow-Dev:
     runs-on: ubuntu-latest
     environment: dev
     steps:
